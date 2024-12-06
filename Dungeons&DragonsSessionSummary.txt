@@ -1,0 +1,5 @@
+Dungeons & Dragons Session Summary
+
+This program recalls a fictional session of the game Dungeons & Dragons, recalling the characters involved,
+some of their basic information and what happened to them during that session. By using several expressions and
+functions, viewers get to see what happened to the player's character as the session progressed.

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            HTML & CSS Basics
+        </title>
+        <style>
+            body{background-color: #f0f0f0;}
+            h1{font-size: 2em; color: #333;}
+            p{font-size: 1em; line-height: 1.5;}
+            ul{padding: 5px; background-color: #ddd;}
+        </style>
+    </head>
+    <body>
+        <h1>
+            Welcome to HTML & CSS Basics
+        </h1>
+        <p>
+            Lorem Ipsum.
+        </p>
+        <ul id = "list">
+            <div id = "container">
+            <li>
+                HTML
+            </li>
+            <li>
+                CSS
+            </li>
+            <li>
+                Javascript
+            </li>
+            </div>
+        </ul>
+        <button id = 'backgroundcolour'>
+            Change Background
+        </button>
+        <button id = 'addingItem'>
+            Add Item
+        </button>
+        <script>
+            let changeColor = document.getElementById('backgroundcolour')
+            function changeBackground() {
+                document.body.style.background = "#c0c0c0";
+            }
+            changeColor.addEventListener('click', function() {
+                console.log(changeBackground());
+            });
+            let addition = document.getElementById("addingItem")
+            function addItem() {
+                let moreText = document.createElement('li');
+                moreText.textContent = "New Item";
+                document.getElementById("list").appendChild(moreText);
+            }
+            addition.addEventListener('click', function() {
+                console.log(addItem());
+            })
+        </script>
+    </body>
+</html>

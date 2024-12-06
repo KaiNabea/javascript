@@ -1,0 +1,15 @@
+import async from 'async'
+async.series([
+    function (callback) {
+        setTimeout(function () {
+            callback(null, 'one');
+        }, 200);
+    },
+    function (callback) {
+        setTimeout(function () {
+            callback(null, 'two');
+        }, 100);
+    }
+], function (err, results) {
+    console.log(results);
+})
